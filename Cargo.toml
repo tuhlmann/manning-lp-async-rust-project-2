@@ -1,0 +1,17 @@
+[package]
+authors = ["Claus Matzinger <claus.matzinger+kb@gmail.com>"]
+edition = "2018"
+name = "manning-lp-async-rust-project-1-m1"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+clap = {version = "3.1.8", features = ["derive"]}
+yahoo_finance_api = { version = "1.1" }
+async-std = { version = "1.12", features = ["attributes", "tokio1", "unstable"]}
+async-trait = "0.1"
+time = { version = "0.3", features = ["macros"] }
+futures = "0.3"
+xactor = "0.7"
